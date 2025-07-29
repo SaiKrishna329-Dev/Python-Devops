@@ -16,3 +16,32 @@ for i in directories:
                     print(f"File over 100MB: {file_path} ({size_mb:.2f} MB)")
             except Exception as e:
                 print(f"Error reading {file_path}: {e}")
+
+
+
+# * glob module:
+# The glob module in Python is used to search for files and directories whose names match a specified pattern (with wildcards like *, ?, [], etc.).
+
+# It returns a list of matching file paths.
+
+# ✅ pattern:
+# In your code, pattern comes from the list:
+# directories = ["/var/log/*", "/tmp/*"]
+# So, for example, pattern = "/var/log/*"
+
+# ✅ glob.glob(pattern):
+# This expands the wildcard pattern like a shell would.
+
+# Example:
+
+# glob.glob("/var/log/*")
+
+# might return:
+
+# [
+#   '/var/log/syslog',
+#   '/var/log/auth.log',
+#   '/var/log/dpkg.log',
+#   '/var/log/private',
+#   ...
+# ]
