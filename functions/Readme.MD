@@ -13,6 +13,22 @@ greet()
 - `()` - parameters list
 - Indented block → function body
 
+## Docstring:
+
+- A docstring (short for documentation string) is a string literal that appears right after the definition of a function, class, or module. It is used to document what the function/class/module does.
+- It must be the first statement inside a function or class — otherwise, Python won't treat it as a docstring.
+
+```python
+def function_name():
+    """
+    This is a docstring.
+    It describes what the function does.
+    """
+    # function code
+```
+-  To access this docstring, you use: ` print(function_name.__doc__)
+`
+
 
 | Feature                | Keyword    | Example                         |
 | ---------------------- | ---------- | ------------------------------- |
