@@ -29,6 +29,18 @@ def function_name():
 -  To access this docstring, you use: ` print(function_name.__doc__)
 `
 
+## Lambda function :
+
+- A lambda function is a small, anonymous (unnamed) function defined using the lambda keyword instead of def.
+
+**syntax:** `lambda arguments: expression`
+
+- lambda — keyword to define the function.
+- arguments — comma-separated input parameters.
+- expression — a single line that gets evaluated and returned.
+
+
+
 
 | Feature                | Keyword    | Example                         |
 | ---------------------- | ---------- | ------------------------------- |
