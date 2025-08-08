@@ -51,3 +51,14 @@ sample_list = range(1, 11) # 1...10
 for ele in sample_list:
     if ele % 2 == 0:
         print(ele)
+
+
+instances = [
+    {"id": "i-123", "state": "running"},
+    {"id": "i-456", "state": "stopped"},
+    {"id": "i-789", "state": "running"},
+]
+
+running = list(filter(lambda x: x['state'] == 'running', instances))
+print(running)  
+
