@@ -1,0 +1,26 @@
+#1. What is the use of os and subprocess modules in automation?
+
+| Module       | Purpose                                      | Example                             |
+| ------------ | -------------------------------------------- | ----------------------------------- |
+| `os`         | OS-level operations (files, paths, env vars) | `os.getenv('HOME')`, `os.listdir()` |
+| `subprocess` | Run shell commands, get output/errors        | `subprocess.run(["ls", "-l"])`      |
+
+
+#2. What is the difference between is and == in Python?
+
+| Operator | Checks                        | Example                                  |
+| -------- | ----------------------------- | ---------------------------------------- |
+| `==`     | Value equality                | `"a" == "a"` → ✅                         |
+| `is`     | Object identity (same memory) | `"a" is "a"` → usually ✅, but not always |
+
+#3. Explain the use of with open(...) in file handling
+
+It ensures safe file operations by automatically closing the file:
+
+with open("log.txt", "r") as f:
+    logs = f.read()
+
+Prevents memory leaks or file corruption
+Recommended over manual f = open(...); f.close()   
+
+
