@@ -27,7 +27,7 @@ def check_http(url, timeout):
             print(f"HTTP health check failed. Status: {response.status_code}")
             return False
 
-    except requests.exceptions.RequestExceptionsas e:
+    except requests.exceptions.RequestExceptions as e:
         print(f" HTTP request failed: {e}")
         return False        
 

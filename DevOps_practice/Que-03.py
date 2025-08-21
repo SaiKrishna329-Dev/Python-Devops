@@ -15,7 +15,8 @@ response = ec2.describe_instances()
 #cretae S3
 
 s3 = boto3.client('s3')
-s3.create_bucket(Bucket='my-devops-bucket')
+if not bucket_exists('my-devops-bucket'):
+    s3.create_bucket(Bucket='my-devops-bucket')
 
 
 # How can you execute shell commands using Python?
