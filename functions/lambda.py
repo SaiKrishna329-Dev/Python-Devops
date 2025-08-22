@@ -20,7 +20,7 @@ sample_list = range(1, 11) # 1...10
 square = lambda num: num ** 2
 
 ans = map(square, sample_list)
-print(ans)
+print(list(ans))
 
 for ele in ans:
     print(ele)

@@ -32,9 +32,9 @@ sample_str = ""
 
 for char in sample_str_list:
     sample_str += char
-    print(sample_str)
-# sample_str = " ".join(sample_str_list)
-# print(sample_str)
+   # print(sample_str)
+sample_str = "".join(sample_str_list)
+print(sample_str)
 
 #3 loops with tuple
 
@@ -75,7 +75,7 @@ else:
 
 sample_list = [10, 10, 20, 30, 5, 80, 90]
 for idx, ele in enumerate(sample_list):
-    print(idx, ele)
+    print(ele, idx)
 
 #7 Range     
 
